@@ -1,0 +1,1 @@
+export const databaseName = "chat_dev__db_";
