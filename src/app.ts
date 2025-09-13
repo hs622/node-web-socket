@@ -23,6 +23,9 @@ const ws = new socket.WebSocketServer({
 });
 
 import v1 from "./routers/v1";
+import loggingIncomingRequest from "./middlewares/console.middleware";
+
+app.use(loggingIncomingRequest);
 
 // API version
 app.use("/api/v1", v1);
